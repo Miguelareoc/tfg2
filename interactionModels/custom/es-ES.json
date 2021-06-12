@@ -1,0 +1,1259 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "tercera prueba",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CreateCosasIntent",
+          "slots": [
+            {
+              "name": "dynamicEntityCosas",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "las {dynamicEntityCosas}",
+                "los {dynamicEntityCosas}",
+                "una {dynamicEntityCosas}",
+                "un {dynamicEntityCosas}",
+                "la {dynamicEntityCosas}",
+                "el {dynamicEntityCosas}",
+                "{dynamicEntityCosas}"
+              ]
+            }
+          ],
+          "samples": [
+            "voy a guardar la {dynamicEntityCosas}",
+            "voy a guardar las {dynamicEntityCosas}",
+            "voy a guardar el {dynamicEntityCosas}",
+            "voy a guardar los {dynamicEntityCosas}",
+            "dejo los {dynamicEntityCosas}",
+            "dejo las {dynamicEntityCosas}",
+            "dejo el {dynamicEntityCosas}",
+            "dejo la {dynamicEntityCosas}",
+            "guardo los {dynamicEntityCosas}",
+            "guardo las {dynamicEntityCosas}",
+            "gaurdo la {dynamicEntityCosas}",
+            "guardo el {dynamicEntityCosas}",
+            "cosa",
+            "la cosa es {dynamicEntityCosas}",
+            "objeto",
+            "guardo",
+            "el objeto es",
+            "agregar",
+            "agrega",
+            "agreguemos una entidad",
+            "agregar entidad",
+            "agrega entidad",
+            "agrega una entidad",
+            "agrega un {dynamicEntityCosas}",
+            "agrega una {dynamicEntityCosas}",
+            "agrega {dynamicEntityCosas}",
+            "agregar una entidad",
+            "agregar un {dynamicEntityCosas}",
+            "agregar una {dynamicEntityCosas}",
+            "agregar {dynamicEntityCosas}"
+          ]
+        },
+        {
+          "name": "CreateLugarIntent",
+          "slots": [
+            {
+              "name": "dynamicEntityLugar",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "en {dynamicEntityLugar}",
+                "{dynamicEntityLugar}"
+              ]
+            }
+          ],
+          "samples": [
+            "lo guardo en {dynamicEntityLugar}",
+            "está en el {dynamicEntityLugar}",
+            "está en {dynamicEntityLugar}",
+            "en {dynamicEntityLugar}",
+            "sobre la {dynamicEntityLugar}",
+            "sobre el {dynamicEntityLugar}",
+            "en la {dynamicEntityLugar}",
+            "en el {dynamicEntityLugar}",
+            "lugar",
+            "está en",
+            "lo guardo en"
+          ]
+        },
+        {
+          "name": "CreateBuscarIntent",
+          "slots": [
+            {
+              "name": "dynamicEntityBuscar",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "en {dynamicEntityBuscar}",
+                "{dynamicEntityBuscar}"
+              ]
+            }
+          ],
+          "samples": [
+            "busca {dynamicEntityBuscar}",
+            "qué guardé en la {dynamicEntityBuscar}",
+            "qué guardé en el {dynamicEntityBuscar}",
+            "qué hay en {dynamicEntityBuscar}",
+            "qué hay en el {dynamicEntityBuscar}",
+            "qué hay en la {dynamicEntityBuscar}",
+            "dónde guarde las {dynamicEntityBuscar} ",
+            "dónde guarde la {dynamicEntityBuscar}",
+            "dónde guarde el {dynamicEntityBuscar}",
+            "donde guarde el",
+            "dónde guarde los {dynamicEntityBuscar}",
+            "dónde guarde {dynamicEntityBuscar}",
+            "dónde deje las {dynamicEntityBuscar}",
+            "dónde deje los {dynamicEntityBuscar}",
+            "dónde deje la {dynamicEntityBuscar}",
+            "dónde deje el {dynamicEntityBuscar}",
+            "dónde deje {dynamicEntityBuscar}",
+            "dónde estan las {dynamicEntityBuscar}",
+            "dónde estan los {dynamicEntityBuscar}",
+            "dónde esta la {dynamicEntityBuscar}",
+            "dónde esta el {dynamicEntityBuscar}",
+            "dónde esta {dynamicEntityBuscar}",
+            "buscar",
+            "que hay en",
+            "donde esta"
+          ]
+        },
+        {
+          "name": "CreateEliminarIntent",
+          "slots": [
+            {
+              "name": "dynamicEntityEliminar",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "la {dynamicEntityEliminar}",
+                "el {dynamicEntityEliminar}",
+                "una {dynamicEntityEliminar}",
+                "un {dynamicEntityEliminar}",
+                "{dynamicEntityEliminar}"
+              ]
+            }
+          ],
+          "samples": [
+            "borra {dynamicEntityEliminar}",
+            "ya no hay {dynamicEntityEliminar}",
+            "saca de la lista {dynamicEntityEliminar}",
+            "elimina {dynamicEntityEliminar}",
+            "eliminar",
+            "borrar",
+            "suprime",
+            "elimina",
+            "borra"
+          ]
+        },
+        {
+          "name": "CheckEntitiesIntent",
+          "slots": [
+            {
+              "name": "entity",
+              "type": "MyEntities"
+            }
+          ],
+          "samples": [
+            "dime si {entity} es una entidad dinámica",
+            "es {entity} una entidad dinámica",
+            "es {entity} una entidad",
+            "está {entity}",
+            "está presente {entity}",
+            "existe {entity}",
+            "es {entity} parte de las entidades",
+            "dime si {entity} existe",
+            "compara {entity}",
+            "que hay de {entity}",
+            "es {entity} dinámica",
+            "dime si {entity} es dinámica",
+            "dame información sobre {entity}",
+            "quiero saber más sonbre {entity}",
+            "verifica {entity}",
+            "revisa {entity}",
+            "verificar {entity}",
+            "revisar {entity}"
+          ]
+        },
+        {
+          "name": "MoveIntent",
+          "slots": [
+            {
+              "name": "Direction",
+              "type": "DirectionType"
+            },
+            {
+              "name": "Duration",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Distance",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Angle",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "OdomX",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "OdomY",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{Direction} durante {Angle} grado",
+            "{Direction} durante {Angle} grados",
+            "{Direction} durante {Distance} segundos",
+            "{Direction} durante {Distance} segundo",
+            "{Direction} durante {Duration} segundos",
+            "{Direction} durante {Duration} segundo",
+            "{Direction} {Duration} segundo",
+            "muévete al {Direction} {OdomX} {OdomY}",
+            "{Direction} {Angle} grados",
+            "{Direction} {Distance} milímetros",
+            "{Direction} ahora",
+            "{Direction} ",
+            "{Direction} {Duration} segundos",
+            "muevete {Direction} por {Duration} segundos"
+          ]
+        },
+        {
+          "name": "SetSpeedIntent",
+          "slots": [
+            {
+              "name": "Speed",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "velocidad al {Speed}",
+            "velocidad al {Speed} porceinto",
+            "{Speed} porciento",
+            "pon la velocidad al {Speed} porciento",
+            "velocidad a {Speed}"
+          ]
+        },
+        {
+          "name": "SetCommandIntent",
+          "slots": [
+            {
+              "name": "Command",
+              "type": "CommandType"
+            }
+          ],
+          "samples": [
+            "dame la {Command}",
+            "modo {Command} activado",
+            "modo {Command}",
+            "muevete en forma de {Command}",
+            "realiza el {Command}",
+            "haz el {Command}",
+            "haz un {Command}",
+            "realiza un {Command}",
+            "{Command}",
+            "muevete {Command}",
+            " {Command} ahora",
+            " {Command} con la música",
+            "activa el modo {Command}"
+          ]
+        },
+        {
+          "name": "AdiosIntent",
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{message}"
+              ]
+            }
+          ],
+          "samples": [
+            "salgo {message}",
+            "Salgo ",
+            "Hasta luego",
+            "adiós",
+            "me voy {message}",
+            "Me voy"
+          ]
+        },
+        {
+          "name": "AyudaIntent",
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "avisa de {message}",
+            "ayuda {message}",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "ActivarIntent",
+          "slots": [
+            {
+              "name": "activar",
+              "type": "ActivarType"
+            }
+          ],
+          "samples": [
+            "{activar} los mensajes",
+            "{activar} los permisos",
+            "{activar}"
+          ]
+        },
+        {
+          "name": "EmocionesIntent",
+          "slots": [
+            {
+              "name": "emocion",
+              "type": "EmocionesType"
+            }
+          ],
+          "samples": [
+            "hoy estoy {emocion}",
+            "hoy me siento {emocion}"
+          ]
+        },
+        {
+          "name": "PreguntasIntent",
+          "slots": [
+            {
+              "name": "Pregunta",
+              "type": "PreguntasType",
+              "samples": [
+                "{Pregunta}"
+              ]
+            }
+          ],
+          "samples": [
+            "preguntame sobre que voy a {Pregunta}",
+            "hazme las preguntas de {Pregunta}",
+            "hazme preguntas de {Pregunta}",
+            "hazme preguntas sobre {Pregunta}",
+            "preguntame sobre un {Pregunta}",
+            "preguntame sobre {Pregunta} ",
+            "recuerdame las {Pregunta}",
+            "recuerdame que te pida un {Pregunta}",
+            "preguntame cuando vaya a {Pregunta}"
+          ]
+        },
+        {
+          "name": "InfoIntent",
+          "slots": [
+            {
+              "name": "Info",
+              "type": "InfoType"
+            }
+          ],
+          "samples": [
+            "dame informacion sobre {Info}",
+            "explicame {Info}",
+            "dame {Info}",
+            "como funciona {Info}",
+            "que puedes hacer"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "retrocede"
+              }
+            },
+            {
+              "name": {
+                "value": "punto"
+              }
+            },
+            {
+              "name": {
+                "value": "media vuelta"
+              }
+            },
+            {
+              "name": {
+                "value": "gira"
+              }
+            },
+            {
+              "name": {
+                "value": "stop"
+              }
+            },
+            {
+              "name": {
+                "value": "alto"
+              }
+            },
+            {
+              "name": {
+                "value": "gira a la izquierda"
+              }
+            },
+            {
+              "name": {
+                "value": "gira a la derecha "
+              }
+            },
+            {
+              "name": {
+                "value": "avanza"
+              }
+            },
+            {
+              "name": {
+                "value": "marcha delante"
+              }
+            },
+            {
+              "name": {
+                "value": "marcha atras"
+              }
+            },
+            {
+              "name": {
+                "value": "para"
+              }
+            },
+            {
+              "name": {
+                "value": "ve hacia atrás"
+              }
+            },
+            {
+              "name": {
+                "value": "ve hacia delante"
+              }
+            },
+            {
+              "name": {
+                "value": "ve a la derecha"
+              }
+            },
+            {
+              "name": {
+                "value": "ve a la izquierda"
+              }
+            },
+            {
+              "name": {
+                "value": "derecha"
+              }
+            },
+            {
+              "name": {
+                "value": "izquierda"
+              }
+            },
+            {
+              "name": {
+                "value": "atras"
+              }
+            },
+            {
+              "name": {
+                "value": "hacia atras"
+              }
+            },
+            {
+              "name": {
+                "value": "hacia delante"
+              }
+            },
+            {
+              "name": {
+                "value": "adelante"
+              }
+            }
+          ],
+          "name": "DirectionType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "yey"
+              }
+            },
+            {
+              "name": {
+                "value": "buenos"
+              }
+            },
+            {
+              "name": {
+                "value": "saludo"
+              }
+            },
+            {
+              "name": {
+                "value": "saludos"
+              }
+            },
+            {
+              "name": {
+                "value": "hola"
+              }
+            },
+            {
+              "name": {
+                "value": "baja"
+              }
+            },
+            {
+              "name": {
+                "value": "sube"
+              }
+            },
+            {
+              "name": {
+                "value": "patita"
+              }
+            },
+            {
+              "name": {
+                "value": "pata "
+              }
+            },
+            {
+              "name": {
+                "value": "bailar"
+              }
+            },
+            {
+              "name": {
+                "value": "baila"
+              }
+            },
+            {
+              "name": {
+                "value": "bajar"
+              }
+            },
+            {
+              "name": {
+                "value": "subir"
+              }
+            },
+            {
+              "name": {
+                "value": "evitacion de obstaculos"
+              }
+            },
+            {
+              "name": {
+                "value": "auto"
+              }
+            },
+            {
+              "name": {
+                "value": "abajo"
+              }
+            },
+            {
+              "name": {
+                "value": "arriba"
+              }
+            },
+            {
+              "name": {
+                "value": "c\\xedrculo"
+              }
+            },
+            {
+              "name": {
+                "value": "pelota"
+              }
+            },
+            {
+              "name": {
+                "value": "guarda"
+              }
+            },
+            {
+              "name": {
+                "value": "centinela"
+              }
+            },
+            {
+              "name": {
+                "value": "círculo"
+              }
+            },
+            {
+              "name": {
+                "value": "cuadrado"
+              }
+            },
+            {
+              "name": {
+                "value": "patrulla"
+              }
+            },
+            {
+              "name": {
+                "value": "modo uno"
+              }
+            },
+            {
+              "name": {
+                "value": "modo dos"
+              }
+            }
+          ],
+          "name": "CommandType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cero"
+              }
+            },
+            {
+              "name": {
+                "value": "nada"
+              }
+            }
+          ],
+          "name": "MyEntities"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "desactiva"
+              }
+            },
+            {
+              "name": {
+                "value": "activa"
+              }
+            },
+            {
+              "name": {
+                "value": "Desactivar"
+              }
+            },
+            {
+              "name": {
+                "value": "Activar"
+              }
+            }
+          ],
+          "name": "ActivarType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "susto"
+              }
+            },
+            {
+              "name": {
+                "value": "nervios"
+              }
+            },
+            {
+              "name": {
+                "value": "cansada"
+              }
+            },
+            {
+              "name": {
+                "value": "asustada"
+              }
+            },
+            {
+              "name": {
+                "value": "enfadada"
+              }
+            },
+            {
+              "name": {
+                "value": "nerviosa"
+              }
+            },
+            {
+              "name": {
+                "value": "cansado"
+              }
+            },
+            {
+              "name": {
+                "value": "asustado"
+              }
+            },
+            {
+              "name": {
+                "value": "enfadado"
+              }
+            },
+            {
+              "name": {
+                "value": "nervioso"
+              }
+            },
+            {
+              "name": {
+                "value": "triste "
+              }
+            },
+            {
+              "name": {
+                "value": "feliz "
+              }
+            }
+          ],
+          "name": "EmocionesType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "historias"
+              }
+            },
+            {
+              "name": {
+                "value": "cuento"
+              }
+            },
+            {
+              "name": {
+                "value": "emociones"
+              }
+            },
+            {
+              "name": {
+                "value": "sentimientos "
+              }
+            },
+            {
+              "name": {
+                "value": "datos curiosos"
+              }
+            },
+            {
+              "name": {
+                "value": "datos"
+              }
+            },
+            {
+              "name": {
+                "value": "las noticias"
+              }
+            },
+            {
+              "name": {
+                "value": "noticia"
+              }
+            },
+            {
+              "name": {
+                "value": "noticas"
+              }
+            },
+            {
+              "name": {
+                "value": "dato interesante"
+              }
+            },
+            {
+              "name": {
+                "value": "dato curioso"
+              }
+            },
+            {
+              "name": {
+                "value": "dato "
+              }
+            },
+            {
+              "name": {
+                "value": "historia"
+              }
+            },
+            {
+              "name": {
+                "value": "algo"
+              }
+            },
+            {
+              "name": {
+                "value": "comida"
+              }
+            },
+            {
+              "name": {
+                "value": "comer"
+              }
+            },
+            {
+              "name": {
+                "value": "cena"
+              }
+            },
+            {
+              "name": {
+                "value": "cenar"
+              }
+            },
+            {
+              "name": {
+                "value": "desayuno"
+              }
+            },
+            {
+              "name": {
+                "value": "desayunar"
+              }
+            }
+          ],
+          "name": "PreguntasType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "mensajes"
+              }
+            },
+            {
+              "name": {
+                "value": "preguntas"
+              }
+            },
+            {
+              "name": {
+                "value": "sentimientos"
+              }
+            },
+            {
+              "name": {
+                "value": "emociones"
+              }
+            },
+            {
+              "name": {
+                "value": "comandos"
+              }
+            },
+            {
+              "name": {
+                "value": "comando"
+              }
+            },
+            {
+              "name": {
+                "value": "movimientos"
+              }
+            },
+            {
+              "name": {
+                "value": "movimiento"
+              }
+            },
+            {
+              "name": {
+                "value": "información"
+              }
+            },
+            {
+              "name": {
+                "value": "info"
+              }
+            },
+            {
+              "name": {
+                "value": "listado"
+              }
+            }
+          ],
+          "name": "InfoType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CreateCosasIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dynamicEntityCosas",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.755660573262.1167094092829",
+                "elicitation": "Elicit.Slot.755660573262.1167094092829"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CreateLugarIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dynamicEntityLugar",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.857805231216.411875283917",
+                "elicitation": "Elicit.Slot.857805231216.411875283917"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CreateBuscarIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dynamicEntityBuscar",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1050348852511.1001379517250",
+                "elicitation": "Elicit.Slot.1102364994134.1482098473105"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CreateEliminarIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dynamicEntityEliminar",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.118417880491.902613898452",
+                "elicitation": "Elicit.Slot.118417880491.902613898452"
+              }
+            }
+          ]
+        },
+        {
+          "name": "AdiosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.884863725858.255843571743",
+                "elicitation": "Elicit.Slot.724262222.1187533250422"
+              }
+            }
+          ]
+        },
+        {
+          "name": "AyudaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "PreguntasIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "Pregunta",
+              "type": "PreguntasType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1128665591137.742864878823"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.755660573262.1167094092829",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "y que vas a guardar?"
+          },
+          {
+            "type": "PlainText",
+            "value": "que cosa quieres guardar"
+          },
+          {
+            "type": "PlainText",
+            "value": "que es?"
+          },
+          {
+            "type": "PlainText",
+            "value": "de que se trata?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Que quieres guardar?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.755660573262.1167094092829",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "quieres guardar {dynamicEntityCosas} , vale?"
+          },
+          {
+            "type": "PlainText",
+            "value": "quieres guardar {dynamicEntityCosas} , es así?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Seguro que es {dynamicEntityCosas} lo que quieres guardar?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Seguro que es {dynamicEntityCosas} ?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Por favor confírmame que {dynamicEntityCosas} es lo que quieres guardar ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.857805231216.411875283917",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "en que lugar se va a quedar?"
+          },
+          {
+            "type": "PlainText",
+            "value": "donde la vas a dejar?"
+          },
+          {
+            "type": "PlainText",
+            "value": "donde estará?"
+          },
+          {
+            "type": "PlainText",
+            "value": "donde lo vas a poner?"
+          },
+          {
+            "type": "PlainText",
+            "value": "donde lo vas a dejar?"
+          },
+          {
+            "type": "PlainText",
+            "value": "donde?"
+          },
+          {
+            "type": "PlainText",
+            "value": "donde esta?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Donde lo vas a guardar?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.857805231216.411875283917",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "seguro que es {dynamicEntityLugar} donde lo vas a guardar?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1102364994134.1482098473105",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "donde o que quieres buscar"
+          },
+          {
+            "type": "PlainText",
+            "value": "que o donde quieres que busque?"
+          },
+          {
+            "type": "PlainText",
+            "value": "que o donde quieres buscar?"
+          },
+          {
+            "type": "PlainText",
+            "value": "y que o donde quieres buscar?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.118417880491.902613898452",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "que borro?"
+          },
+          {
+            "type": "PlainText",
+            "value": "que elimino?"
+          },
+          {
+            "type": "PlainText",
+            "value": "que quieres borrar del listado?"
+          },
+          {
+            "type": "PlainText",
+            "value": "que quieres eliminar del listado?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.118417880491.902613898452",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "seguro que quieres borrar {dynamicEntityEliminar} del listado?"
+          },
+          {
+            "type": "PlainText",
+            "value": "seguro que quieres eliminar {dynamicEntityEliminar} ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1050348852511.1001379517250",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "estas seguro que quieres buscar {dynamicEntityBuscar} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1051887913644.1413971151110",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "en que lugar se va a quedar?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1051887913644.1413971151110",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "seguro que es {dynamicEntityLugarr} donde lo vas a guardar?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1051887913644.1580615610470",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "que cosa quieres guardar?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1051887913644.1580615610470",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "seguro que quieres guardar {dynamicEntityCosa}"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.724262222.1187533250422",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "y a donde vas?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.884863725858.255843571743",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "entonces te vas {message} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.228382997211.368550976615",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "que sucede?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1128665591137.742864878823",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "y que quieres que te pregunte?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "35"
+}
